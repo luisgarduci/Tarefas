@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(fundo.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+body, html {
+  height: auto;
+  width: auto;
+}
+
+main {
+    width: 700px;
+    padding-top: 15px;
+    margin: auto;
+    display: block;
+    position: sticky;
+}
+
+main > h1 {
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 5px;
+    width: 650px;
+    padding: 4px;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+main > .container {
+    width: 700px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+main > .container > input {
+    width: 475px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+main > .container > button {
+    padding: 5px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 118px;
+    cursor: pointer;
+}
+
+main > ul {
+    width: 650px;
+    height: auto;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+}
+
+main > ul > li {
+    border: 2px solid white;
+    margin: auto;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    padding: 8px;
+    margin-top: 8px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 22px;
+    gap: 70px;
+}
+
+main > ul > li > #left {
+    width: 515px;
+}
+
+main > ul > li > #right {
+    width: 65px;
+}
+
+.iconex , .iconecheck {
+    width: 27px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.opacity {
+    animation-name: animacao-x;
+    animation-duration: 2.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes animacao-x {
+    0% {
+       opacity: 1;
+    }
+
+    50% {
+       opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+}
+
+#divExcluir {
+    background-color: lightgray;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    width: 250px;
+    border-radius: 5px;
+    padding: 8px;
+    margin: auto;
+    display: block;
+    background-color: red;
+    margin-top: 10px;
+    color: white;
+    visibility: hidden;
+}
+
+#divExcluir > p {
+    margin: 0px;
+}
+
+
+@media (max-width: 700px){
+    
+   body, html {
+    height: 100vh;
+   }
+    
+    main {
+        width: 320px;
+        padding-top: 40px;
+    }
+
+    main > h1 {
+        width: 320px;
+        font-size: 19px;
+    }
+
+    main > ul {
+        width: 320px;
+        padding-left: 5px;
+    }
+
+    main > .container {
+        width: 320px;
+        padding-left: 5px;
+    }
+
+    main > .container > input {
+        font-size: 14px;
+        width: 210px;
+    }
+
+    main > .container > button {
+        width: 100px;
+        font-size: 14px;
+    }
+
+    main > ul > li {
+        font-size: 16px;
+        width: 320px;
+        gap: 65px;
+    }
+
+
+    main > ul > li > #left {
+        width: 195px;
+    }
+
+    main > ul > li #right {
+        width: 34px;
+    }
+
+    .iconex, .iconecheck {
+        width: 17px;
+        height: 20px;
+    }
+
+    #divExcluir {
+        width: 160px;
+        font-size: 14px;
+        padding: 3px;
+    }
+    
+}
